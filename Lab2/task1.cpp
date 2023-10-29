@@ -6,7 +6,7 @@
 #include <stdlib.h>
 
 using namespace std;
-
+//Заполнение массивов, пользовательский интерфейс
 void SposobZapoln(vector<string> &names, vector<int> &marks){
     int i;
     do {
@@ -101,10 +101,12 @@ void SposobZapoln(vector<string> &names, vector<int> &marks){
         }
     } while(i != 0);
 }
-
+//Коктельная сортировка
 vector<int> shakerSort(vector<int> masiv) {
+	//Создание левой и правой границы
 	int control = masiv.size() - 1;
 	int left = 0, right = control;
+	//Проход вправо
 	do {
 		for (int i = left; i < right; i++) {
 			if (masiv[i] > masiv[i + 1]) {
@@ -113,6 +115,7 @@ vector<int> shakerSort(vector<int> masiv) {
 			}
 		}
 		right = control;
+		//Проход влево
 		for (int i = right; i > left; i--) {
 			if (masiv[i] < masiv[i - 1]) {
 				std::swap(masiv[i], masiv[i - 1]);
@@ -123,14 +126,14 @@ vector<int> shakerSort(vector<int> masiv) {
 	} while (left < right);
 	return masiv;
 }
-
+//Медиана
 float median(vector<int> masiv)
 {
     masiv = shakerSort(masiv); 
     if (masiv.size() % 2 == 1){return masiv[masiv.size() / 2];}
     else {return 0.5 * (masiv[masiv.size() / 2 - 1] + masiv[masiv.size() / 2]);}
 }       
-
+//Среднее значение
 float srznach(vector<int> masiv)
 {
    float znach = 0;
@@ -139,7 +142,7 @@ float srznach(vector<int> masiv)
      }
    return znach/masiv.size();
 }
-
+//Мода
 vector<int> moda(vector<int> masiv)
 {
     vector<int> Moda{};
@@ -176,13 +179,13 @@ int main()
     vector<string> names{};
     vector<int> marks{};
     SposobZapoln(names, marks);
-    
+    //Вывод массивов через итератор
     // auto itern{names.cbegin()};
     // auto iterm{marks.cbegin()};
     // for(int j = 0; j < names.size(); ++j){
     //     cout << *(itern + j) << ' ' << *(iterm + j) << " | ";
     // }
-    
+    //Range-based for-loop вывод массивов
     //for(string j: names){
     //    cout << j << ' ';
     //}
@@ -190,7 +193,7 @@ int main()
     //for(int j: marks){
     //    cout << j << ' ';
     //}
-    
+    //Вывод массивов
     for(int j = 0; j < names.size(); ++j){
         cout << names[j] << ' ' << marks[j] << endl;
     }
