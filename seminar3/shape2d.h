@@ -1,6 +1,9 @@
 #pragma once
 
 #include "shape.h"
+#include "square.h"
+#include "triangle.h"
+#include "circle.h"
 
 class Shape2D : public Shape{
     private:
