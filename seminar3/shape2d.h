@@ -6,20 +6,14 @@
 #include "circle.h"
 
 class Shape2D : public Shape{
-    private:
-        float area = 0;
+    protected:
+        float area;
         void virtual calculateArea() = 0;
+        
     public:
-
-        Shape2D(float area);
-
         float getArea();
 
         bool operator>(Shape2D& sh);
         bool operator<(Shape2D& sh);
         bool operator==(Shape2D& sh);
-
-        // friend class Square;
-        // friend class Triangle;
-        // friend class Circle;
 };

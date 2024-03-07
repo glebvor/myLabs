@@ -1,6 +1,7 @@
 #pragma once
 
 #include <string>
+#include <iostream>
 #include "shape2d.h"
 #include "shape3d.h"
 

@@ -6,17 +6,14 @@
 #include "sphere.h"
 
 class Shape3D : public Shape{
-    private:
-        float volume = 0;
+    protected:
+        float volume;
         void virtual calculateVolume() = 0;
+        
     public:
         float getVolume();
 
         bool operator>(Shape3D& sh);
         bool operator<(Shape3D& sh);
         bool operator==(Shape3D& sh);
-
-        // friend class TrianglePyramid;
-        // friend class Cylinder;
-        // friend class Sphere;
 };

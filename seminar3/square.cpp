@@ -4,15 +4,15 @@ using namespace std;
 
 Square::Square(float side): side(side){}
 
-void Square::scale(float scaleFactor = 1) override{
+void Square::scale(float scaleFactor = 1){
     area *= scaleFactor;
 }
 
-string Square::getName() override{
+string Square::getName(){
     return "Я квадрат!";
 }
 
-void Square::showInfo() override{
+void Square::showInfo(){
     getName();
     cout << "\tМоя плоадь = " << area << endl;
     cout << "\tДлина моей стороны = " << getArea() << endl;
