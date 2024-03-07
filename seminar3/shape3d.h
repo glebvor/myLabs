@@ -15,4 +15,8 @@ class Shape3D : public Shape{
         bool operator>(Shape3D& sh);
         bool operator<(Shape3D& sh);
         bool operator==(Shape3D& sh);
+
+        // friend class TrianglePyramid;
+        // friend class Cylinder;
+        // friend class Sphere;
 };

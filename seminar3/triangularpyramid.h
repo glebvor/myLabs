@@ -5,4 +5,5 @@
 class TriangularPyramid : public Shape3D{
     private:
         float height;
+        // Triangle tr;
 };
