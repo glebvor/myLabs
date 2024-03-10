@@ -14,6 +14,7 @@ string Square::getName(){
 
 void Square::showInfo(){
     getName();
+    calculateArea();
     cout << endl;
     cout << "\tМоя площадь = " << area << endl;
     cout << "\tДлина моей стороны = " << side << endl;

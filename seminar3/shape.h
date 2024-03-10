@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SHAPE_H
+#define SHAPE_H
 
 #include <string>
 #include <iostream>
@@ -11,3 +12,5 @@ class Shape{
         void virtual showInfo() = 0;
         std::string virtual getName() = 0;
 };
+
+#endif

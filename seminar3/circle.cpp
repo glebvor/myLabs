@@ -14,6 +14,7 @@ string Circle::getName(){
 
 void Circle::showInfo(){
     getName();
+    calculateArea();
     cout << endl;
     cout << "\t®ο ―«®ι ¤μ = " << area << endl;
     cout << "\t®© ΰ ¤¨γα = " << radius << endl;

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SQUARE_H
+#define SQUARE_H
 
 #include "shape2d.h"
 
@@ -14,3 +15,5 @@ class Square : public Shape2D{
         void showInfo() override;
 
 };
+
+#endif

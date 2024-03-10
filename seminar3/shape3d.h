@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SHAPE3D_H
+#define SHAPE3D_H
 
 #include "shape.h"
 #include "triangularpyramid.h"
@@ -17,3 +18,5 @@ class Shape3D : public Shape{
         bool operator<(Shape3D& sh);
         bool operator==(Shape3D& sh);
 };
+
+#endif

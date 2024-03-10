@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SHAPE2D_H
+#define SHAPE2D_H
 
 #include "shape.h"
 #include "square.h"
@@ -17,3 +18,5 @@ class Shape2D : public Shape{
         bool operator<(Shape2D& sh);
         bool operator==(Shape2D& sh);
 };
+
+#endif
