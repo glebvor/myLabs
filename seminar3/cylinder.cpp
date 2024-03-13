@@ -1,4 +1,4 @@
-#include "triangularpyramid.h"
+#include "cylinder.h"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ string Cylinder::getName(){
 }
 
 void Cylinder::showInfo(){
-    getName();
+    cout << getName();
     calculateVolume();
     cout << endl;
     cout << "\t®© ®΅κρ¬ = " << volume << endl;

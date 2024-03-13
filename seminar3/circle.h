@@ -12,7 +12,7 @@ class Circle : public Shape2D{
     
     public:
         Circle(float radius);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 
         friend class Cylinder;

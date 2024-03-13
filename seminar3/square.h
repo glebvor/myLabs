@@ -11,7 +11,7 @@ class Square : public Shape2D{
     
     public:
         Square(float side);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 
 };

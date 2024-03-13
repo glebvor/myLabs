@@ -3,6 +3,7 @@
 
 #include <math.h>
 #include "shape3d.h"
+#include "circle.h"
 
 class Cylinder : public Shape3D{
     private:
@@ -13,7 +14,7 @@ class Cylinder : public Shape3D{
     
     public:
         Cylinder(float radiusc, float height);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 };
 

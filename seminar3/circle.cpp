@@ -13,7 +13,7 @@ string Circle::getName(){
 }
 
 void Circle::showInfo(){
-    getName();
+    cout << getName();
     calculateArea();
     cout << endl;
     cout << "\tМоя площадь = " << area << endl;

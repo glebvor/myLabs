@@ -2,6 +2,7 @@
 #define TRIANGULARPYRAMID_H
 
 #include "shape3d.h"
+#include "triangle.h"
 
 class TriangularPyramid : public Shape3D{
     private:
@@ -12,7 +13,7 @@ class TriangularPyramid : public Shape3D{
     
     public:
         TriangularPyramid(float baset, float heightt, float height);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 };
 

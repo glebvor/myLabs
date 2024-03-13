@@ -2,9 +2,9 @@
 #define SHAPE2D_H
 
 #include "shape.h"
-#include "square.h"
-#include "triangle.h"
-#include "circle.h"
+// #include "square.h"
+// #include "triangle.h"
+// #include "circle.h"
 
 class Shape2D : public Shape{
     protected:

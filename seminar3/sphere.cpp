@@ -13,7 +13,7 @@ string Sphere::getName(){
 }
 
 void Sphere::showInfo(){
-    getName();
+    cout << getName();
     calculateVolume();
     cout << endl;
     cout << "\t®© ®΅κρ¬ = " << volume << endl;

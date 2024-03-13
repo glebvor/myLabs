@@ -13,7 +13,7 @@ string Triangle::getName(){
 }
 
 void Triangle::showInfo(){
-    getName();
+    cout << getName();
     calculateArea();
     cout << endl;
     cout << "\tМоя площадь = " << area << endl;

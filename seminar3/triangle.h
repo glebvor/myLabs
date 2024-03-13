@@ -11,7 +11,7 @@ class Triangle : public Shape2D{
     
     public:
         Triangle(float base, float height);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 
         friend class TriangularPyramid;

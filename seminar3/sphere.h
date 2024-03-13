@@ -12,7 +12,7 @@ class Sphere : public Shape3D{
     
     public:
         Sphere(float radiusc);
-        void scale(float scaleFactor = 1) override;
+        void scale(float scaleFactor) override;
         void showInfo() override;
 };
 
