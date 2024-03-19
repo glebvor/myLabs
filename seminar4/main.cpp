@@ -1,4 +1,5 @@
 #include <iostream>
+#include "matrix.h"
 
 using namespace std;
 
@@ -23,15 +24,19 @@ int findSecond(T* first, int size){
 
 int main(){
 
-    int arri[3]{1, 3, 3};
-    float arrf[3]{3., 2., 3.};
-    double arrd[3]{3., 2., 1.};
-    char arrc[3]{'a', 'b', 'c'};
+    // int arri[3]{1, 3, 3};
+    // float arrf[3]{3., 2., 3.};
+    // double arrd[3]{3., 2., 1.};
+    // char arrc[3]{'a', 'b', 'c'};
 
-    cout << findSecond(arri, 3) << endl;
-    cout << findSecond(arrf, 3) << endl;
-    cout << findSecond(arrd, 3) << endl;
-    cout << findSecond(arrc, 3) << endl;
+    // cout << findSecond(arri, 3) << endl;
+    // cout << findSecond(arrf, 3) << endl;
+    // cout << findSecond(arrd, 3) << endl;
+    // cout << findSecond(arrc, 3) << endl;
+
+    Matrix<char> ch(2, 2);
+    ch.fill();
+    cout << ch;
 
     return 0;
 }
