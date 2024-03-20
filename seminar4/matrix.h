@@ -8,7 +8,7 @@ using namespace std;
 
 template<class T>
 class Matrix{
-private:
+protected:
     T** data;
     int line, column;
 

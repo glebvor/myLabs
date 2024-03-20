@@ -1,5 +1,6 @@
 #include <time.h>
 #include "matrix.h"
+#include "vector.h"
 
 using namespace std;
 
@@ -36,9 +37,20 @@ int main(){
     // cout << findSecond(arrd, 3) << endl;
     // cout << findSecond(arrc, 3) << endl;
 
-    Matrix<double> ch(4, 4);
-    ch.fill();
-    cout << ch;
+    // Matrix<double> ch(4, 4);
+    // ch.fill();
+    // cout << ch;
+
+    Vector<int> vc1(3);
+    Vector<int> vc2(3);
+
+    vc1.fill();
+    vc2.fill();
+
+    cout << vc1;
+    cout << vc2;
+
+    cout << vc1 * vc2;
 
     return 0;
 }
