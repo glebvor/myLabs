@@ -1,4 +1,4 @@
-#include <iostream>
+#include <time.h>
 #include "matrix.h"
 
 using namespace std;
@@ -24,6 +24,8 @@ int findSecond(T* first, int size){
 
 int main(){
 
+    srand(time(NULL));
+
     // int arri[3]{1, 3, 3};
     // float arrf[3]{3., 2., 3.};
     // double arrd[3]{3., 2., 1.};
@@ -34,7 +36,7 @@ int main(){
     // cout << findSecond(arrd, 3) << endl;
     // cout << findSecond(arrc, 3) << endl;
 
-    Matrix<char> ch(2, 2);
+    Matrix<double> ch(4, 4);
     ch.fill();
     cout << ch;
 
