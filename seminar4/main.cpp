@@ -41,8 +41,8 @@ int main(){
     // ch.fill();
     // cout << ch;
 
-    Vector<char> vc1;
-    Vector<char> vc2;
+    Vector<int> vc1;
+    Vector<int> vc2;
 
     vc1.fill();
     vc2.fill();
